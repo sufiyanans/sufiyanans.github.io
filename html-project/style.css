@@ -1,0 +1,193 @@
+  body {
+    background-image: url("salman.jpg");
+    
+  }
+
+p {
+    background-color:rgb(245, 7, 7);
+}
+
+/* agar koi element ka class se define karna rahe ga to . se defie karenge */
+/* for example */
+.line1 {
+    background-color: #9e7f7f;
+}
+
+/* agar id ko define karna rahe ga to # symbole se karenge  */
+/* for example */
+#line2 {
+    background-color: #e0d5d5;
+} 
+    
+
+
+/* this is classs selector */
+input[type="text"]{
+        padding: 100;
+        margin: 100;
+        border: outset #e0d5d5;
+        /* display: flex;   ye line horizontal kar de gi sab elements ko */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* min-height: 100vh; */
+        background: linear-gradient(135deg, #FF4136, #FF851B, #FFDC00, #2ECC40, #0074D9, #B10DC9, #FF4136);
+        background-size: 1200% 1200%;
+        animation: gradientAnimation 20s ease infinite;
+    }
+    
+    @keyframes gradientAnimation {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        14.28% {
+            background-position: 100% 50%;
+        }
+        28.56% {
+            background-position: 0% 50%;
+        }
+        42.84% {
+            background-position: 100% 50%;
+        }
+        57.12% {
+            background-position: 0% 50%;
+        }
+        71.4% {
+            background-position: 100% 50%;
+        }
+        85.68% {
+            background-position: 0% 50%;
+        }
+    }
+
+/* this is called psuedo selector */
+input:hover[type="submit"]{
+background-color: #b93c3c;
+padding: 10px;
+list-style-type: clamp;
+border: 2px dotted rgb(0, 0, 0);
+}
+
+
+h1{
+    color: #48e35a;
+    background-color: #5f99cc;
+    margin: 50px;
+    padding: 100px;
+    border: #09365e dotted;
+}
+
+
+/* list ke liye , use hota hai  */
+/* h1 , p{
+    background-color: #fff;
+} */
+
+#allstyling{
+    color: #48e35a;
+    background-color: #f9e178;
+    padding: 200px 200px 20px 20px ;
+    border: dashed #7eb4e2; 
+    /* border-bottom: #FFDC00;
+    border-top:blue ;
+    border-left: #f9e178;
+    border-right: #09365e;
+    border-style: dashed; */
+}
+
+.design{
+text-decoration: underline;
+text-decoration: line-through;
+}
+
+.txt{
+    text-decoration: underline;
+}
+
+.txt1{
+    text-decoration: line-through;
+}
+
+.txt2{
+    text-transform: uppercase ;
+    text-align: center;
+    font-size: 2.00em;
+    /* font-family: 'Oswald', sans-serif; */
+    font-style: italic;
+    font-weight: 900;
+    line-height: 100px;
+    
+}
+
+.txt3{
+    margin: 40%;
+    padding: 1%;
+    color: #000000;
+    background-color: #fff;
+    align-items: center;  
+    text-align: center;
+    width: 200px; 
+    height: 360px;
+    line-height: 100px;
+
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row-reverse ;
+    justify-content: space-evenly;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    margin: 7px;
+
+}
+
+
+.table{
+display: grid;
+grid-template-columns: auto 550px auto;
+border: 5px solid white;
+}
+
+.gri-item{
+    display: grid;
+    border: 5px solid black;
+    justify-content: space-evenly;
+    margin: 7px;
+    padding: 7px;
+    height: 50px;
+    /* width: 50px; */
+    border: 2px solid red;
+}
+.one{
+    grid-row-start: 2;
+}
+
+
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    animation: ani 5s linear infinite;
+  } 
+
+@keyframes ani {
+
+    0%{
+        
+    }
+}
+.tri{
+    height: 0;
+    width: 0;
+    border: 5rem solid black;
+    border-bottom: 5rem;
+    
+
+}
